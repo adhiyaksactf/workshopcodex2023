@@ -1,0 +1,9 @@
+version: '3'
+services:
+ web:
+   image: vulhub/php:8.1-backdoor
+   volumes:
+    - ./app/index.php:/var/www/html/index.php
+    - ./app/flag_Just4you_88992977201087298_Mantap.php:/flag_Just4you_88992977201087298_Mantap.php
+   ports:
+    - "8099:80"
